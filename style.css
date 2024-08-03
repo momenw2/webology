@@ -357,3 +357,17 @@ header {
 .teamContainer h3 {
   font-size: 40px;
 }
+
+.ourProjectsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.ourProjectsTitle {
+  display: flex;
+  justify-content: center;
+}
+
+.ourProjectsTitle h3 {
+  font-size: 40px;
+}
