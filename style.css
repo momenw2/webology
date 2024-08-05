@@ -442,6 +442,10 @@ header {
   font-size: 18px;
 }
 
+.projectBox .Res {
+  display: none;
+}
+
 /* .contactUsTitle {
   display: flex;
   justify-content: center;
@@ -450,3 +454,159 @@ header {
 .contactUsTitle h3 {
   font-size: 40px;
 } */
+
+/* Existing CSS remains unchanged */
+
+/* Add these media queries at the end of your CSS file */
+
+@media screen and (max-width: 1024px) {
+  .context p {
+    padding-right: 10%;
+  }
+
+  .aboutUsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutUsLeftBox,
+  .aboutUsRightBox {
+    width: 100%;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .aboutUsRightBox img {
+    width: 70%;
+    margin-top: 20px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container .card {
+    margin-bottom: 30px;
+  }
+
+  .projectBox {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .projectImageBox,
+  .projectDataBox {
+    width: 100%;
+  }
+
+  .projectDataBox p {
+    width: 100%;
+  }
+
+  .contactUsBox {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .contactUsLeft,
+  .contactUsRight {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .context h1 {
+    font-size: 40px;
+  }
+
+  .context h4,
+  .context p {
+    font-size: 16px;
+  }
+
+  .context p {
+    padding-right: 0;
+  }
+
+  .aboutUsRightBox img {
+    width: 90%;
+  }
+
+  .container .card .slide {
+    width: 250px;
+  }
+
+  .icon h4 {
+    font-size: 30px;
+  }
+
+  .projectBox {
+    padding: 20px;
+  }
+
+  .contactUsBox {
+    padding: 20px;
+  }
+
+  .projectBox .Res {
+    display: block;
+  }
+
+  .projectBox .Des {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .context h1 {
+    font-size: 30px;
+  }
+
+  .context h4,
+  .context p {
+    font-size: 14px;
+  }
+
+  .container .card .slide {
+    width: 200px;
+  }
+
+  .icon h4 {
+    font-size: 24px;
+  }
+
+  .teamContainer h3,
+  .ourProjectsTitle h3 {
+    font-size: 30px;
+  }
+
+  .contactUsBox h3 {
+    font-size: 24px;
+  }
+}
+
+.projectBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectImage {
+  order: -1; /* This moves the image to the top */
+}
+
+.projectDataBox {
+  /* Add any specific styles for the text container */
+}
+
+/* Media query for larger screens if you want to revert to original layout */
+@media (min-width: 768px) {
+  .projectBox {
+    flex-direction: row;
+  }
+
+  .projectImage {
+    order: 0; /* Reset the order for larger screens */
+  }
+}
