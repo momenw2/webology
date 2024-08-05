@@ -371,3 +371,82 @@ header {
 .ourProjectsTitle h3 {
   font-size: 40px;
 }
+
+.projectBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.projectImageBox {
+  width: 40%;
+}
+
+.projectImageBox img {
+  width: 90%;
+}
+
+.projectDataBox {
+  width: 60%;
+}
+
+.projectDataBox p {
+  width: 80%;
+}
+
+.projectDataBox span {
+  color: rgb(213, 58, 1);
+}
+
+.projectDataBox a {
+  color: white;
+}
+
+.projectDataBox a:hover {
+  color: rgb(248, 124, 79);
+}
+
+.contactUsContainer {
+  display: flex;
+  width: 100%;
+}
+
+.contactUsBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.contactUsBox h3 {
+  color: rgb(213, 58, 1);
+  font-size: 30px;
+}
+
+.contactUsLeft {
+  width: 50%;
+}
+.contactUsRight {
+  width: 30%;
+}
+
+.contactUsRight a:hover {
+  color: rgb(248, 124, 79);
+}
+
+.contactUsRight span {
+  /* color: rgb(213, 58, 1); */
+  font-size: 18px;
+}
+
+/* .contactUsTitle {
+  display: flex;
+  justify-content: center;
+}
+
+.contactUsTitle h3 {
+  font-size: 40px;
+} */
